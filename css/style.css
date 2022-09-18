@@ -691,7 +691,7 @@ body::after {
 
 .page__main-block {
   margin-top: 79px;
-  background: url("img/background/1.png") 100%/cover no-repeat;
+  background: url("../img/background/1.png") 100%/cover no-repeat;
   background-size: auto 103%;
   background-position: center;
 }
@@ -1504,7 +1504,7 @@ body::after {
   text-align: center;
 }
 .statistic {
-  background: url("img/background/fair.png") 100%/cover no-repeat;
+  background: url("../img/background/fair.png") 100%/cover no-repeat;
   margin-top: -150px;
   text-align: center;
   color: #fff;
