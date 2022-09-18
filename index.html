@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220918152437">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+	.menuBurger {
+		transition: transform 0.3s ease 0s;
+		transform: translate(-110%, 0px);
+	}
+
+	.menu-open .menuBurger {
+		transform: translate(0%, 0px);
+		transition: all 0.3s ease 0s;
+	}
+</style>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="720" class="header _header-show">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__left">
+						<div class="header__logo"><img src="img/icons/logo.png" alt="логотип"></div>
+						<ul data-da=".menuBurger, 768" class="header__list">
+							<li class="header__link">Главная</li>
+							<li class="header__link">Цены</li>
+							<li class="header__link">Портфолио</li>
+						</ul>
+					</div>
+					<div class="header__right">
+						<p class="header__schedule">Ежедневно с 9:00 до 21:00</p>
+						<a href="tel:+79964018832" class="header__phone">
+							<img src="img/icons/phone.svg" alt="">
+						</a>
+						<div data-da=".menuBurger, 768" data-popup="#popup" class="header__button">ОСТАВИТЬ ЗАЯВКУ</div>
+						<div class="menu__icon icon-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</header>
+		<div class="menuBurger"></div>
+		<main class="page">
+			<section class="page__main-block main-block">
+				<div class="main-block__container">
+					<div class="main-block__body">
+						<div class="main-block__man">
+							<img src="img/man/1.png" alt="человек">
+						</div>
+						<div class="main-block__info">
+							<h1 class="main-block__title">ЭЛЕКТРОМОНТАЖНЫЕ РАБОТЫ <br>
+								В УФЕ <br>
+								ОТ "ЭЛЕКТРОМАСТЕРА"</h1>
+							<p class="main-block__descript">Меня зовут Руслан ,я занимаюсь электромонтажными работами,
+								видеонаблюдением и разработкой дизаин проекта для квартиры, дома, коттеджа и офиса.Делаю смету и
+								составляю договор по вашему желанию.Я предлагаю вам готовые "Инженерные решения" по разумным и выгодным ценам для вас.
+							</p>
+							<div class="main-block__wrap-benefits">
+								<div class="main-block__element">
+									<div class="main-block__wrap-element">
+										<img src="img/icons/fix_price.svg" alt="">
+										<p>Фиксированная цена</p>
+									</div>
+									<p class="main-block__article">Фиксированная цена в договоре, без скрытых платежей.
+									</p>
+								</div>
+								<div class="main-block__element">
+									<div class="main-block__wrap-element">
+										<img src="img/icons/garant.svg" alt="">
+										<p>Гарантия 1 год</p>
+									</div>
+									<p class="main-block__article">Честная гарантия, мы всегда исполняем свои обязательства.</p>
+								</div>
+							</div>
+							<div class="main-block__button">РАСЧИТАТЬ СТОИМОСТЬ</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__services services">
+				<div class="services__container">
+					<div class="services__title title">Популярные услуги</div>
+					<div class="services__body">
+						<div class="services__item">
+							<div class="services__cart">
+								<div class="services__name">Установка розетки, выключателя</div>
+								<div class="services__price">200 ₽</div>
+								<div data-popup="#popup" class="services__button">заказать</div>
+							</div>
+
+							<div class="services__img"><img src="img/Services/1.png" alt=""></div>
+						</div>
+						<div class="services__item">
+							<div class="services__cart">
+								<div class="services__name">Установка светильника, люстры</div>
+								<div class="services__price">250 ₽</div>
+								<div data-popup="#popup" class="services__button">заказать</div>
+							</div>
+
+							<div class="services__img"><img src="img/Services/2.png" alt=""></div>
+						</div>
+						<div class="services__item">
+							<div class="services__cart">
+								<div class="services__name">Прокладка кабеля</div>
+								<div class="services__price">50 ₽ / метр</div>
+								<div data-popup="#popup" class="services__button">заказать</div>
+							</div>
+
+							<div class="services__img"><img src="img/Services/3.png" alt=""></div>
+						</div>
+						<div class="services__item">
+							<div class="services__cart">
+								<div class="services__name">Замена автомата</div>
+								<div class="services__price">250 ₽</div>
+								<div data-popup="#popup" class="services__button">заказать</div>
+							</div>
+
+							<div class="services__img"><img src="img/Services/4.png" alt=""></div>
+						</div>
+						<div class="services__item">
+							<div class="services__cart">
+								<div class="services__name">Замена проводки</div>
+								<div class="services__price">250 ₽</div>
+								<div data-popup="#popup" class="services__button">заказать</div>
+							</div>
+
+							<div class="services__img"><img src="img/Services/5.png" alt=""></div>
+						</div>
+						<div class="services__item">
+							<div class="services__cart">
+								<div class="services__name">Установка электромонтажного оборудования</div>
+								<div class="services__price">500 ₽</div>
+								<div data-popup="#popup" class="services__button">заказать</div>
+							</div>
+
+							<div class="services__img"><img src="img/Services/6.png" alt=""></div>
+						</div>
+
+					</div>
+				</div>
+				<div class="services__image">
+					<img src="img/background/image.png" alt="">
+				</div>
+
+				<div class="services__bg">
+					<div class="services__container">
+						<div class="services__question-body">
+							<div class="services__question-title">Не нашли нужную услугу или остались вопросы!?
+							</div>
+							<div data-popup="#popup" class="services__button-consultation">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__answer answer">
+				<div class="answer__container">
+					<h2 class="answer__title title">ОТВЕТЫ на ВОПРОСЫ</h2>
+					<div class="answer__body">
+						<div class="answer__item">
+							<div class="answer__image"><img src="img/icons/what.svg" alt=""></div>
+							<div class="answer__questoin">
+								<div class="answer__article">КАК БЫСТРО ВЫЕЗЖАЕТ ЭЛЕКТРИК?</div>
+								<div class="answer__descript">Мастер выезжает к вам в течение 30 минут, либо в назначенное время.</div>
+							</div>
+						</div>
+						<div class="answer__item">
+							<div class="answer__image"><img src="img/icons/what.svg" alt=""></div>
+							<div class="answer__questoin">
+								<div class="answer__article">В КАКОЙ РАЙОН ВЫ ВЫЕЗЖАЕТЕ?</div>
+								<div class="answer__descript">Мы выезжаем по всей Уфе</div>
+							</div>
+						</div>
+						<div class="answer__item">
+							<div class="answer__image"><img src="img/icons/what.svg" alt=""></div>
+							<div class="answer__questoin">
+								<div class="answer__article">СКОЛЬКО СТОИТ ВЫЕЗД И ОСМОТР?</div>
+								<div class="answer__descript">Выезд и первичный осмотр по Уфе — бесплатен в случае продолжения работ.</div>
+							</div>
+						</div>
+						<div class="answer__item">
+							<div class="answer__image"><img src="img/icons/what.svg" alt=""></div>
+							<div class="answer__questoin">
+								<div class="answer__article">ДАЕТЕ ГАРАНТИИ?</div>
+								<div class="answer__descript">Да, конечно. По окончанию работ,
+									предоставим вам чек и официальную гарантию на 1 год.</div>
+							</div>
+						</div>
+						<div class="answer__item">
+							<div class="answer__image"><img src="img/icons/what.svg" alt=""></div>
+							<div class="answer__questoin">
+								<div class="answer__article">МОЖЕТЕ НАЗВАТЬ ТОЧНУЮ СТОИМОСТЬ РЕМОНТА ПО ТЕЛЕФОНУ?</div>
+								<div class="answer__descript">Это невозможно по ряду причин. Точную стоимость ремонта можно определить только непосредственно на объекте.</div>
+							</div>
+						</div>
+						<div class="answer__item">
+							<div class="answer__image"><img src="img/icons/what.svg" alt=""></div>
+							<div class="answer__questoin">
+								<div class="answer__article">ЕСЛИ У МЕНЯ НЕТ МАТЕРИАЛОВ?</div>
+								<div class="answer__descript">Мы купим все необходимые материалы.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__risk risk">
+
+				<div class="risk__request">
+					<div class="risk__container">
+						<div class="risk__body">
+							<div class="risk__image"><img src="img/man/2.png" alt=""></div>
+							<div class="risk__request-form">
+								<div class="risk__name">ОСТАВЬТЕ ЗАЯВКУ!</div>
+								<p class="risk__descript">Мы свяжемся с вами в течении 15 минут и уточнит детали.</p>
+								<form class="risk__body-form">
+									<div class="risk__input">
+										<p>Введите имя:</p>
+										<input type="text" placeholder="Иван Иванов">
+									</div>
+									<div class="risk__input">
+										<p>Введите телефон:</p>
+										<input class="phone" placeholder="+7(___)___-__-__" type="text">
+									</div>
+									<button class="risk__button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="risk__statistic statistic">
+					<div class="risk__container">
+						<div class="statistic__body">
+							<h2 class="statistic__title title">ПО СТАТИСТИКЕ МЧС</h2>
+							<p class="statistic__descript">БОЛЕЕ <span>70%</span> ПОЖАРОВ В КВАРТИРАХ И ДОМАХ
+								ПРОИСХОДЯТ ИЗ-ЗА НЕИСПРАВНОЙ ЭЛЕКТРОПРОВОДКИ</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="risk__professional professional">
+					<div class="risk__container">
+						<div class="professional__title title">избавьтесь от рисков, работая с профессионалами
+							своего дела
+						</div>
+						<div class="professional__body">
+
+
+
+
+
+							<div class="professional__item">
+								<div class="professional__image"><img src="img/icons/car.svg" alt=""></div>
+								<div class="professional__text">Выезд по всей уфе</div>
+							</div>
+							<div class="professional__item">
+								<div class="professional__image"><img src="img/icons/money.svg" alt=""></div>
+								<div class="professional__text">дешевле конкурентов по Уфе</div>
+							</div>
+							<div class="professional__item">
+								<div class="professional__image"><img src="img/icons/dogovor.svg" alt=""></div>
+								<div class="professional__text">Официальный договор</div>
+							</div>
+
+
+							<div class="professional__item">
+								<div class="professional__image"><img src="img/icons/persona.svg" alt=""></div>
+								<div class="professional__text">Компетентные мастера опыт от 6 лет</div>
+							</div>
+							<div class="professional__item">
+								<div class="professional__image"><img src="img/icons/tools.svg" alt=""></div>
+								<div class="professional__text">Полный набор профессиональных инструментов</div>
+							</div>
+							<div class="professional__item">
+								<div class="professional__image"><img src="img/icons/galka.svg" alt=""></div>
+								<div class="professional__text">Ремонт любой сложности</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<section class="page__calculator calculator">
+				<div class="calculator__container">
+					<div class="calculator__body">
+					</div>
+					<div class="calculator__steps steps">
+
+						<div class="steps__image-steps">
+							<div class="steps__body-steps">
+								<img class="steps__img-roz_mob" src="img/background/rozetkaMobile.png" alt="">
+
+								<div class="steps__title">Этапы
+									выполнения работ
+									по элекромонтажу
+								</div>
+								<div class="steps__item">
+									<div class="steps__wrap">
+										<div class="steps__icon"><img src="img/icons/calc.svg" alt=""></div>
+										<div class="steps__item-title">Заявка и расчет</div>
+									</div>
+									<div class="steps__descript">
+										Вы отправляете заявку на сайте или звоните по телефону
+										<a href="tel:+79964018832">+7 996 401-88-32</a>.
+										Мы отвечаем на все ваши вопросы, ориентирует по
+										стоимости работ, материалов и срокам выполнения.
+										Согласовываем дату и время выезда.
+									</div>
+								</div>
+								<div class="steps__item">
+									<div class="steps__wrap">
+										<div class="steps__icon"><img src="img/icons/rule.svg" alt=""></div>
+										<div class="steps__item-title">Выезд на объект</div>
+									</div>
+									<div class="steps__descript">
+										<p>Выезжаем на объект для осмотра и замера в удобное для вас время.</p>
+										<p>На месте уточняем детали, составляем рабочий проект.</p>
+									</div>
+								</div>
+								<div class="steps__item">
+									<div class="steps__wrap">
+										<div class="steps__icon"><img src="img/icons/dogovor-rozet.svg" alt=""></div>
+										<div class="steps__item-title">Подписание договора</div>
+									</div>
+									<div class="steps__descript">
+										Подписываем договор на выполнение электромонтажных
+										работ с указанием сроков, характеристик вашего
+										помещения, а также стоимости работ и материалов.
+									</div>
+								</div>
+								<div class="steps__item">
+									<div class="steps__wrap">
+										<div class="steps__icon"><img src="img/icons/tools-rozet.svg" alt=""></div>
+										<div class="steps__item-title">Подбор, закупка и доставка материалов
+										</div>
+									</div>
+									<div class="steps__descript">
+										Работаем только с качественными материалами ведущих
+										производителей, с учетом индивидуальных особенностей
+										вашего объекта.
+									</div>
+								</div>
+								<div class="steps__item">
+									<div class="steps__wrap">
+										<div class="steps__icon"><img src="img/icons/job-rozet.svg" alt=""></div>
+										<div class="steps__item-title">Выполнение работ</div>
+									</div>
+									<div class="steps__descript">
+										Производим электромонтажные работы в оговоренные сроки,
+										в строгом соответствии с нормами и правилами (СНиП и ПУЭ-7)
+										и проверкой работоспособности систем электроснабжения после
+										выполнения работ.
+									</div>
+								</div>
+								<div class="steps__item">
+									<div class="steps__wrap">
+										<div class="steps__icon"><img src="img/icons/prfomansJobs.svg" alt=""></div>
+										<div class="steps__item-title">Сдача выполненных работ</div>
+									</div>
+									<div class="steps__descript">
+										Проводим демонстрацию работы системы электроснабжения:
+										работа выключателей, переключателей, розеток, точек освещения.
+										Подписываем акт приёмки-сдачи выполненных работ.
+									</div>
+								</div>
+								<div class="steps__button">
+									<div data-popup="#popup" class="steps__body-button">ОСТАВИТЬ ЗАЯВКУ</div>
+								</div>
+								<img class="steps__img-roz_pc" src="img/background/rozetka.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__review review">
+				<div class="review__container">
+					<div class="review__title title">Отзывы клиентов</div>
+					<div class="review__body-wrap">
+						<div class="review__body">
+							<!-- Оболочка слайдера -->
+							<div class="review__slider swiper">
+								<!-- Двигающееся часть слайдера -->
+								<div class="review__arrows">
+									<button type="button" class="swiper-button-prev"><img src="img/icons/arrow-left.svg" alt="">
+										<button type="button" class="swiper-button-next"><img src="img/icons/arrow-right.svg" alt=""></button>
+								</div>
+								<div class="review__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="review__slide swiper-slide">
+										<div class="review__wrap">
+											<div class="review__avatar"><img src="img/avatar/1.jpg" alt=""></div>
+											<div class="review__name">Иван иванов</div>
+										</div>
+										<div class="review__text">Руслан делал электрику в 2 комнатной квартире под ключ, всё чётко, аккуратно и быстро. Как полагается по дизайн проекту. Подписал кабеля для будущих работ. Сам приобрёл все необходимые элементы.
+										</div>
+									</div>
+
+									<div class="review__slide swiper-slide">
+										<div class="review__wrap">
+											<div class="review__avatar"><img src="img/avatar/1.jpg" alt=""></div>
+											<div class="review__name">Иван иванов</div>
+										</div>
+										<div class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates veritatis ab saepe fuga quisquam cupiditate iste officia numquam praesentium sint rem aperiam eum, adipisci sit quibusdam accusantium quasi dolor.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates veritatis ab saepe fuga quisquam cupiditate iste officia numquam praesentium sint rem aperiam eum, adipisci sit quibusdam accusantium quasi dolor.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates veritatis ab saepe fuga quisquam cupiditate iste officia numquam praesentium sint rem aperiam eum, adipisci sit quibusdam accusantium quasi dolor.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates veritatis ab saepe fuga quisquam cupiditate iste officia numquam praesentium sint rem aperiam eum, adipisci sit quibusdam accusantium quasi dolor.
+										</div>
+									</div>
+									<div class="review__slide swiper-slide">
+										<div class="review__wrap">
+											<div class="review__avatar"><img src="img/avatar/1.jpg" alt=""></div>
+											<div class="review__name">Иван иванов</div>
+										</div>
+										<div class="review__text">Руслан делал электрику в 2 комнатной квартире под ключ, всё чётко, аккуратно и быстро. Как полагается по дизайн проекту. Подписал кабеля для будущих работ. Сам приобрёл все необходимые элементы.
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Если нужна навигация (влево/вправо) -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__certificate certificate">
+				<div class="certificate__container">
+
+
+					<div data-gallery class="certificate__body">
+						<a class="certificate__item" data-src="img/certificate/1.jpg">
+							<img src="img/certificate/1.jpg" alt="">
+						</a>
+						<a class="certificate__item" data-src="img/certificate/2.jpg">
+							<img src="img/certificate/2.jpg" alt="">
+						</a>
+						<a class="certificate__item" data-src="img/certificate/3.png">
+							<img src="img/certificate/3.png" alt="">
+						</a>
+						<a class="certificate__item" data-src="img/certificate/4.jpg">
+							<img src="img/certificate/4.jpg" alt="">
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="page__questions questions">
+				<div class="questions__container">
+					<div class="questions__body">
+						<div class="questions__forma">
+							<div class="questions__title">Остались вопросы?</div>
+							<div class="questions__descript">Закажите обратный звонок</div>
+							<hr>
+							<form action="#" class="questions__form">
+								<div class="questions__input">
+									<label for="name">Ваше имя</label>
+									<input autocomplete="off" type="text" name="name" data-error="Заполните строку" placeholder="Иван Иванов" class="input">
+								</div>
+								<div class="questions__input">
+									<label for="phone">Ваш телефон</label>
+									<input autocomplete="off" type="text" name="phone" data-error="Заполните строку" placeholder="+7(___)___-__-__" class="input phone">
+								</div>
+								<div class="questions__button">ОТПРАВИТЬ</div>
+							</form>
+						</div>
+						<div class="questions__image"><img src="img/man/3.png" alt=""></div>
+					</div>
+				</div>
+
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div data-da=".footer, 557 , first" class="footer__left">
+					<div class="footer__logo"><img src="img/icons/logo.png" alt="логотип"></div>
+					<p class="footer__article">ЭЛЕКТРОМОНТАЖНЫЕ РАБОТЫ</p>
+				</div>
+				<div class="footer__center">
+					<div class="footer__title">Контакты</div>
+					<a href="tel:+7 996 4018832" class="footer__phone">+7 996 401-88-32</a>
+					<div class="footer__schedule">Работаем <br> с 9:00 до 21:00</div>
+				</div>
+				<div class="footer__right">
+					<div class="footer__title">Мы в соц сетях</div>
+					<div class="footer__socail-body">
+						<a href="#" class="footer__link-social"><img src="img/icons/Telegram.svg" alt=""></a>
+						<a href="#" class="footer__link-social"><img src="img/icons/WhatsApp.svg" alt=""></a>
+						<a href="#" class="footer__link-social"><img src="img/icons/vk.svg" alt=""></a>
+					</div>
+
+
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span class="close"></span></button>
+				<div class="popup__title">ВАМ НУЖНА КОНСУЛЬТАЦИЯ?</div>
+				<div class="popup__descript">Оставьте заявку и мы свяжемся с Вами в ближайшее время!</div>
+				<div class="popup__body">
+					<div class="popup__input">
+						<label for="name">Имя</label>
+						<input autocomplete="off" type="text" name="name" data-error="Заполните строку" placeholder="Иван Иванов" class="input">
+					</div>
+					<div class="popup__input">
+						<label for="phone">Номер телефона</label>
+						<input autocomplete="off" type="text" name="phone" data-error="Заполните строку" placeholder="+7(___)___-__-__" class="input phone">
+					</div>
+					<div class="popup__body-button">
+						<div class="popup__button">ОСТАВИТЬ ЗАЯВКУ</div>
+					</div>
+					<div class="popup__privacy">
+						Нажимая кнопку, вы даете согласие на <a target="_blank" href="privacy_policy.html">обработку персональных данных</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20220918152437"></script>
+</body>
+
+</html>
