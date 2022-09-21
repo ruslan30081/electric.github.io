@@ -10887,15 +10887,31 @@ PERFORMANCE OF THIS SOFTWARE.
         document.addEventListener("click", menu);
         function menu(event) {
             let targetElement = event.target;
-            if (!targetElement.closest(".menuBurger") && !targetElement.closest(".icon-menu")) {
-                menuClose();
-                console.log("закрыл");
-            }
+            if (!targetElement.closest(".menuBurger") && !targetElement.closest(".icon-menu")) menuClose();
         }
         let btnFormMobile = document.querySelector(".header__button._dynamic_adapt_");
         if (btnFormMobile) btnFormMobile.addEventListener("click", (e => {
             flsModules.popup.open("#popup");
             menuClose();
+        }));
+        let maps = document.querySelector("#map");
+        if (maps) ymaps.ready((function() {
+            var myMap = new ymaps.Map("map", {
+                center: [ 54.75220810909024, 56.02500793337403 ],
+                zoom: 9
+            }, {
+                searchControlProvider: "yandex#search"
+            }), myPlacemark = (ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'), 
+            new ymaps.Placemark([ 54.754942717851236, 56.024930203704834 ], {
+                hintContent: "Собственный значок метки",
+                balloonContent: "Это красивая метка"
+            }, {
+                iconLayout: "default#image",
+                iconImageHref: "img/map/iconHome.svg",
+                iconImageSize: [ 30, 42 ],
+                iconImageOffset: [ -5, -38 ]
+            }));
+            myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
         }));
         window["FLS"] = false;
         isWebp();

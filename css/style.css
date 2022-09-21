@@ -692,7 +692,6 @@ body::after {
 .page__main-block {
   margin-top: 79px;
   background: url("../img/background/1.png") 100%/cover no-repeat;
-  background-size: auto 103%;
   background-position: center;
 }
 .page__services {
@@ -710,6 +709,11 @@ body::after {
   margin-top: 45px;
   height: 100%;
   align-self: flex-end;
+}
+@media (max-width: 47.99875em) {
+  .main-block__man {
+    display: none;
+  }
 }
 @media (max-width: 47.99875em) {
   .main-block__man {
@@ -793,7 +797,7 @@ body::after {
   z-index: -1;
   position: absolute;
   width: 200%;
-  height: 638px;
+  height: 97%;
   top: 0;
   left: 0;
   background: rgba(19, 19, 19, 0.65);
@@ -1743,16 +1747,16 @@ body::after {
 @media (max-width: 61.99875em) {
   .steps__item {
     position: relative;
-    margin-left: 15%;
+    margin-left: 19%;
     margin-bottom: 45px;
   }
   .steps__item::before {
     content: "";
     position: absolute;
-    width: 5%;
+    width: 11%;
     height: 14px;
-    top: 16%;
-    left: -7%;
+    top: 25px;
+    left: -13%;
     background-color: #ededed;
   }
 }
@@ -1863,6 +1867,11 @@ body::after {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+}
+@media (max-width: 61.99875em) {
+  .steps__wrap {
+    align-items: flex-start;
+  }
 }
 .steps__icon {
   max-width: 68px;
@@ -2142,6 +2151,40 @@ body::after {
   }
 }
 
+.webp__main-block {
+  background: url("../img/background/1.webp") 100%/cover no-repeat;
+}
+.webp .statistic {
+  background: url("../img/background/fair.webp") 100%/cover no-repeat;
+}
+
+.page__privacy {
+  margin-top: 80px;
+}
+
+.privacy__body {
+  padding-left: 15px;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Roboto Condensed";
+  line-height: 28px;
+}
+.privacy__title {
+  padding-top: 117px;
+  margin-bottom: 69px;
+  line-height: 33px;
+}
+.privacy__parag {
+  margin-bottom: 41px;
+}
+.privacy__list {
+  margin-bottom: 40px;
+  list-style-type: disc;
+}
+.privacy__list li {
+  list-style: disc;
+  list-style-type: disc;
+}
 .title {
   text-transform: uppercase;
   font-weight: 700;
@@ -2230,6 +2273,10 @@ body::after {
 ::placeholder {
   /* Most modern browsers support this now. */
   color: #000;
+}
+
+#map {
+  margin-top: 400px;
 }
 .swiper {
   overflow: hidden;
