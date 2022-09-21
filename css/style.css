@@ -691,7 +691,7 @@ body::after {
 
 .page__main-block {
   margin-top: 79px;
-  background: url("../img/background/1.png") 100%/103% no-repeat;
+  background: url("../img/background/1.png") 100% no-repeat;
   background-position: center;
 }
 .page__services {
@@ -2152,7 +2152,7 @@ body::after {
 }
 
 .webp .page__main-block {
-  background: url("../img/background/1.webp") 100%/103% no-repeat;
+  background: url("../img/background/1.webp") 100% no-repeat;
 }
 .webp .statistic {
   background: url("../img/background/fair.webp") 100%/103% no-repeat;
