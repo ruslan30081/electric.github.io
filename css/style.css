@@ -82,6 +82,10 @@ h6 {
   overflow: hidden;
   touch-action: none;
 }
+.lg-on body {
+  overflow: hidden;
+  touch-action: none;
+}
 .wrapper {
   position: relative;
   min-height: 100%;
