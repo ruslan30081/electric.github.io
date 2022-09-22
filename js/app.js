@@ -5423,7 +5423,8 @@
         };
         let bodyUnlock = (delay = 500) => {
             let body = document.querySelector("body");
-            if (bodyLockStatus) {
+            if (bodyLockStatus && !body.classList.contains("lg-on")) {
+                console.log(!body.classList.contains("lg-on"));
                 let lock_padding = document.querySelectorAll("[data-lp]");
                 setTimeout((() => {
                     for (let index = 0; index < lock_padding.length; index++) {
@@ -10887,7 +10888,8 @@ PERFORMANCE OF THIS SOFTWARE.
         document.addEventListener("click", menu);
         function menu(event) {
             let targetElement = event.target;
-            if (!targetElement.closest(".menuBurger") && !targetElement.closest(".icon-menu")) menuClose();
+            let htmls = document.querySelector("html");
+            if (!targetElement.closest(".menuBurger") && !targetElement.closest(".icon-menu") && !htmls.classList.contains("lg-on")) menuClose();
         }
         let btnFormMobile = document.querySelector(".header__button._dynamic_adapt_");
         if (btnFormMobile) btnFormMobile.addEventListener("click", (e => {
@@ -10911,7 +10913,7 @@ PERFORMANCE OF THIS SOFTWARE.
                 iconImageSize: [ 30, 42 ],
                 iconImageOffset: [ -5, -38 ]
             }));
-            myMap.geoObjects.add(myPlacemark).add(myPlacemarkWithContent);
+            myMap.geoObjects.add(myPlacemark);
         }));
         window["FLS"] = false;
         isWebp();
